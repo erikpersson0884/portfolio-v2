@@ -1,6 +1,7 @@
 import './App.css'
 
 import Header from './layout/header/Header'
+import Footer from './layout/footer/Footer'
 
 import Sidebar from './components/sidebar/Sidebar'
 
@@ -18,8 +19,10 @@ function App() {
             <article>  
                 <Professions />
                 <Projects />
-                 <StudentOrganizations />
+                <StudentOrganizations />
             </article>
+
+            <Footer />
         </>
     )
 }

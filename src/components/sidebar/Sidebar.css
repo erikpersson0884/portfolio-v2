@@ -3,18 +3,58 @@
     background-color: rgba(168, 168, 168, 0.943);
 
     position: fixed;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
     
-    width: 10%;
     padding: 1rem;
     height: 100vh;
 }
 
-.sidebar img {
+.sidebar .logo {
     box-sizing: border-box;
-    width: 70%;
+    width: 8rem;
 }
 
 .sidebar ul {
     list-style: none;
     padding: 0;
+}
+
+.sidebar .table-of-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: .5rem;
+}
+
+.sidebar .table-of-contents a {
+    color: rgb(37, 37, 37);
+
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Inknut Antiqua';
+
+    display: inline-block;
+    transition: transform 0.2s linear;
+}
+
+.sidebar .table-of-contents a:hover {
+    color: #000;
+    transform: scale(1.08);
+}
+
+.sidebar .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding-top: 1rem;
+    margin-top: auto;
+    margin-bottom: 2rem;
 }
