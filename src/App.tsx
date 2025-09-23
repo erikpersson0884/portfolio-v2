@@ -1,20 +1,25 @@
 import './App.css'
+
+import Header from './layout/header/Header'
+
 import Sidebar from './components/sidebar/Sidebar'
 
-import erik from './assets/erik.jpg'
+import Professions from './components/profession/Professions'
+import Projects from './components/project/Projects'
+import StudentOrganizations from './components/studentOrganization/StudentOrganizations'
+
 
 function App() {
     return (
         <>
-            <article>
-                <header>
-                    <img src={erik} className="logo" alt="Vite logo" />
-                    <h1>Erik Persson</h1>
-                    <h2>Software engineering students</h2>
-                </header>                    
-            </article>
-
+            <Header />
             <Sidebar />
+
+            <article>  
+                <Professions />
+                <Projects />
+                 <StudentOrganizations />
+            </article>
         </>
     )
 }
