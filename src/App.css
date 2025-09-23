@@ -1,0 +1,17 @@
+
+#root {
+  background-color: rgb(251, 251, 251);
+}
+
+article header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem 0
+}
+
+article header img {
+  width: 20%;
+}
