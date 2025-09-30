@@ -9,6 +9,7 @@ import Professions from './components/professions/Professions'
 import Education from './components/education/Education'
 import StudentOrganizations from './components/studentOrganization/StudentOrganizations'
 import Projects from './components/project/Projects'
+import Skills from './components/skills/Skills'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                 <Education />
                 <StudentOrganizations />
                 <Projects />
+                <Skills />
 
                 <Footer />
             </article>

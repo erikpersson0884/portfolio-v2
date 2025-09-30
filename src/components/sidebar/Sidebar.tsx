@@ -10,11 +10,10 @@ const Sidebar: FC = () => {
 
     const links: { name: string, url: string }[] = [
         { name: 'Professions', url: '#professions' },
-        { name: 'Projects', url: '#projects' },
-        { name: 'Involvements', url: '#involvments' },
         { name: 'Education', url: '#education' },
-        { name: 'Certificates', url: '#certificates' },
-        { name: 'Contact', url: '#footer' },
+        { name: 'Involvements', url: '#involvments' },
+        { name: 'Projects', url: '#projects' },
+        { name: 'Skills', url: '#skills' },
     ]
 
     const socials: { name: string, url: string, image: string }[] = [
