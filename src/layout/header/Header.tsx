@@ -6,7 +6,7 @@ const Header = () => {
         <header className='page-header'>
             <img src={erik} className="logo" alt="Vite logo" />
             <h1>Erik Persson</h1>
-            <h2>Software engineering students</h2>
+            <h2>Software engineering student</h2>
         </header>   
     )
 }

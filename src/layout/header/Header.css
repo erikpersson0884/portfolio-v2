@@ -8,6 +8,13 @@
 }
 
 .page-header img {
+    min-width: 10rem;
     width: 20%;
     margin: 5rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    .page-header h2 {
+        font-size: 1.5rem;
+    }
 }
