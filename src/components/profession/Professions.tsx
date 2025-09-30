@@ -3,39 +3,38 @@ import Profession from './Profession'
 const Professions = () => {
     return (
         <section>
-                    <h1 id={"professions"}>Professions</h1>
-                    <Profession 
-                        position="Facility manager" 
-                        company="SGS Studentbostäder"
-                        employmentType="Summer position"
-                        year="2025"
-                        description={[ "Supervised and coordinated maintenance of student housing facilities", "Assisted tenants by addressing inquiries and resolving housing-related issues", "Ensured properties met safety and functionality standards", "Collaborated with colleagues to support daily operations and property management"
-                        ]}
-                    />
+            <Profession 
+                position="Facility manager" 
+                company="SGS Studentbostäder"
+                employmentType="Summer position"
+                year="2025"
+                description={[ "Supervised and coordinated maintenance of student housing facilities", "Assisted tenants by addressing inquiries and resolving housing-related issues", "Ensured properties met safety and functionality standards", "Collaborated with colleagues to support daily operations and property management"
+                ]}
+            />
 
-                    <Profession 
-                        position="Shift Worker" 
-                        company="Borealis"
-                        employmentType="Summer position"
-                        year="2022 & 2023"
-                        description={[
-                        "Responsible for the production of world-leading polymer products with a focus on quality and efficiency",
-                        "Actively adhered to safety protocols to maintain a secure working environment",
-                        "Ensured continuous operation of the production chain through diligent maintenance and problem-solving"
-                        ]}
-                    />
+            <Profession 
+                position="Shift Worker" 
+                company="Borealis"
+                employmentType="Summer position"
+                year="2022 & 2023"
+                description={[
+                "Responsible for the production of world-leading polymer products with a focus on quality and efficiency",
+                "Actively adhered to safety protocols to maintain a secure working environment",
+                "Ensured continuous operation of the production chain through diligent maintenance and problem-solving"
+                ]}
+            />
 
-                    <Profession 
-                        position="Store Associate" 
-                        company="ICA Pärlan"
-                        employmentType="Summer position"
-                        year="2021"
-                        description={[
-                        "Worked across all store departments, including bakery, checkout, and inventory management",
-                        "Managed logistics and stock flow to keep shelves well-stocked and ensure efficient warehouse operations",
-                        "Provided excellent customer service through effective planning and ergonomic work practices"
-                        ]}
-                    />
+            <Profession 
+                position="Store Associate" 
+                company="ICA Pärlan"
+                employmentType="Summer position"
+                year="2021"
+                description={[
+                "Worked across all store departments, including bakery, checkout, and inventory management",
+                "Managed logistics and stock flow to keep shelves well-stocked and ensure efficient warehouse operations",
+                "Provided excellent customer service through effective planning and ergonomic work practices"
+                ]}
+            />
         </section>
     )
 }

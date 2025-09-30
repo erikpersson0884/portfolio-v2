@@ -13,16 +13,22 @@ import StudentOrganizations from './components/studentOrganization/StudentOrgani
 function App() {
     return (
         <>
-            <Header />
             <Sidebar />
 
-            <article>  
-                <Professions />
-                <Projects />
-                <StudentOrganizations />
-            </article>
+            <article>
+                <Header />
 
-            <Footer />
+                <h1 id={"professions"}>Professions</h1>
+                <Professions />
+
+                <h1 id={"projects"}>Projects</h1>
+                <Projects />
+
+                <h1 id={"studentOrganizations"}>Student Organizations</h1>
+                <StudentOrganizations />
+
+                <Footer />
+            </article>
         </>
     )
 }

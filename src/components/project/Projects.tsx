@@ -3,8 +3,6 @@ import Project from './Project'
 const Projects = () => {
     return (
         <section>
-            <h1 id={"projects"}>Projects</h1>
-
             <Project 
                 name="vevIT" 
                 type="Booking system"

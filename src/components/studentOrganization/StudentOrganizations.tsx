@@ -3,8 +3,6 @@ import StudentOrganization from "./StudentOrganization";
 const StudentOrganizations = () => {
     return (
         <section>
-            <h2>Student Organization Contributions</h2>
-
             <StudentOrganization 
                 position="Board Member" 
                 organization="IT Student Division" 
