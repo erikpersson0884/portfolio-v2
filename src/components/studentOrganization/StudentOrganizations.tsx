@@ -23,7 +23,7 @@ const StudentOrganization: FC<StudentOrganizationProps> = ({position, organizati
 const StudentOrganizations: FC = () => {
     return (
         <section>
-            <h1 id={"studentOrganizations"}>Student Organizations</h1>
+            <h1 id={"involvments"}>Student Organizations</h1>
 
             {studentOrganizations.map((org, index) => (
                 <StudentOrganization

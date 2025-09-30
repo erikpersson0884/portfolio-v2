@@ -11,7 +11,7 @@ const Sidebar: FC = () => {
     const links: { name: string, url: string }[] = [
         { name: 'Professions', url: '#professions' },
         { name: 'Projects', url: '#projects' },
-        { name: 'Involvements', url: '#student-organizations' },
+        { name: 'Involvements', url: '#involvments' },
         { name: 'Education', url: '#education' },
         { name: 'Certificates', url: '#certificates' },
         { name: 'Contact', url: '#footer' },
