@@ -1,41 +1,37 @@
-import StudentOrganization from "./StudentOrganization";
+import type { FC } from 'react';
+import ContentBlock from '../contentBlock/ContentBlock';
+import studentOrganizations from '../../data/studentOrganizations.json';
 
-const StudentOrganizations = () => {
+
+interface StudentOrganizationProps {
+    position: string;
+    organization: string;
+    year?: string;
+    description: string[];
+}
+
+const StudentOrganization: FC<StudentOrganizationProps> = ({position, organization, year, description}) => {
+    return (
+        <ContentBlock
+            header={`${position} - ${organization}`}
+            subheader={year}
+            content={description}
+        />
+    )
+};
+
+const StudentOrganizations: FC = () => {
     return (
         <section>
-            <StudentOrganization 
-                position="Board Member" 
-                organization="IT Student Division" 
-                year="2023"
-                description={[
-                "Managed internal and external communications to enhance engagement within the student community.", 
-                "Coordinated events and initiatives to promote collaboration and professional development among members.", 
-                "Played an active role in strategic decision-making and improving the division's outreach and operations"
-                ]}
-            />
-
-            <StudentOrganization 
-                position="Division Auditor" 
-                organization="IT Student Division" 
-                year="2023 & 2023"
-                description={[
-                "Oversaw and audited the division's operations and financial management to ensure compliance and transparency",
-                "Provided constructive feedback and recommendations to improve organizational processes"
-                ]}
-            />
-
-            <StudentOrganization 
-                position="Treasurer" 
-                organization="Chalmers IT Student Association" 
-                year="2024 & 2025"
-                description={[
-                "Managed the organization’s budget, tracking income and expenses",
-                "Oversaw financial transactions and maintained accurate records",
-                "Prepared financial reports for committee meetings and annual reviews",
-                "Assisted in planning events with budget considerations",
-                "Ensured compliance with financial policies and procedures"
-                ]}
-            />
+            {studentOrganizations.map((org, index) => (
+                <StudentOrganization
+                    key={index}
+                    position={org.position}
+                    organization={org.organization}
+                    year={org.year}
+                    description={org.description}
+                />
+            ))}
         </section>
     )
 };
