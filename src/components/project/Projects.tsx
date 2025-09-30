@@ -10,7 +10,7 @@ interface ProjectProps {
     link?: string;
 }
 
-const Project: FC<ProjectProps> = ({ name, type, languages, description, link }) => {
+const Project: FC<ProjectProps> = ({ name, type, languages, description }) => {
     return (
         <ContentBlock 
             header={`${name} - ${type}`}
