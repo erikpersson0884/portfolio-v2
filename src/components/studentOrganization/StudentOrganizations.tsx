@@ -23,6 +23,8 @@ const StudentOrganization: FC<StudentOrganizationProps> = ({position, organizati
 const StudentOrganizations: FC = () => {
     return (
         <section>
+            <h1 id={"studentOrganizations"}>Student Organizations</h1>
+
             {studentOrganizations.map((org, index) => (
                 <StudentOrganization
                     key={index}

@@ -4,8 +4,7 @@
     align-items: center;
 
     box-sizing: border-box;
-    height: 100vh;
-    padding: 1rem 0
+    height: calc(100vh - 10rem); /* Subtracting the margin top for section titles */
 }
 
 .page-header img {

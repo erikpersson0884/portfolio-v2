@@ -17,14 +17,9 @@ function App() {
 
             <article>
                 <Header />
-
-                <h1 id={"professions"}>Professions</h1>
+                
                 <Professions />
-
-                <h1 id={"projects"}>Projects</h1>
                 <Projects />
-
-                <h1 id={"studentOrganizations"}>Student Organizations</h1>
                 <StudentOrganizations />
 
                 <Footer />

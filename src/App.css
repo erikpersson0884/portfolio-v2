@@ -6,23 +6,64 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10rem;
 
+    text-align: center;
+
+    box-sizing: border-box;
+    width: 85%;
+    padding-inline: 2rem;
     margin-left: 15%;
 }
 
-article section {
-    text-align: center;
+section {
+    width: 100%;
 }
 
-article>h1 {
+section h1 {
+    width: fit-content;
+    margin: 10rem auto 5rem 5rem;
+}
+
+section ul {
     text-align: left;
 
-    width: 85%;
+    max-width: 520px;
+    margin-inline: auto;
 }
 
-article ul {
-    text-align: center;
 
-    max-width: 50ch;    
+
+/* Generic classes */
+
+.no-list-style {
+    list-style: none;
+    padding: 0;
+}
+
+.no-link-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.link-underline {
+    text-decoration: none;
+    position: relative;
+}
+
+.link-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 0;
+    height: 2px;
+    background-color: #379255;
+
+    transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+    width: 100%;
 }

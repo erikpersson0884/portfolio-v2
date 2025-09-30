@@ -9,8 +9,8 @@ interface ContentBlockProps {
 const ContentBlock: FC<ContentBlockProps> = ({header, subheader, content}) => {
     return (
         <div>
-            <h1>{header}</h1>
-            {subheader && <h2>{subheader}</h2>}
+            <h2>{header}</h2>
+            {subheader && <h3>{subheader}</h3>}
             
             <ul>
                 {content.map((item, index) => (

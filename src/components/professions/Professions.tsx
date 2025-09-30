@@ -24,6 +24,8 @@ const Profession: FC<ProfessionProps> = ({position, company, employmentType, yea
 const Professions: FC = () => {
     return (
         <section>
+            <h1 id={"professions"}>Professions</h1>
+
             {professions.map((job, index) => (
                 <Profession 
                     key={index}

@@ -23,6 +23,8 @@ const Project: FC<ProjectProps> = ({ name, type, languages, description, link })
 const Projects = () => {
     return (
         <section>
+            <h1 id={"projects"}>Projects</h1>
+
             {projects.map((project, index) => (
                 <Project 
                     key={index}

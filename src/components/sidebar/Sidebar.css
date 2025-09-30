@@ -12,36 +12,20 @@
     
     box-sizing: border-box;
     height: 100vh;
-    width: 15%;
+    width: var(--sidebar-width);
     padding: 1rem;
 }
 
 .sidebar .logo {
-    box-sizing: border-box;
     width: 8rem;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar .table-of-contents {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: .5rem;
-}
-
 .sidebar .table-of-contents a {
-    color: #000;
-
-    text-decoration: none;
     font-size: 1.3rem;
     font-family: 'Inknut Antiqua';
 
-    display: inline-block;
-    transition: transform 0.2s linear;
+    /* display: inline-block;
+    transition: transform 0.2s linear; */
 }
 
 .sidebar .table-of-contents a:hover {
