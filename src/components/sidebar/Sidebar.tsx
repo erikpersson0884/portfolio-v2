@@ -24,7 +24,9 @@ const Sidebar: FC = () => {
 
     return (
         <aside className="sidebar">
-            <img src={logo} className="logo" alt="site logo" />
+            <a href="/">
+                <img src={logo} className="logo" alt="site logo" />
+            </a>
 
             <nav>
                 <ul className='table-of-contents no-list-style'>

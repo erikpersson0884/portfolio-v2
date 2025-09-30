@@ -3,13 +3,11 @@
     flex-direction: column;
     align-items: center;
 
-    box-sizing: border-box;
-    height: calc(100vh - 10rem); /* Subtracting the margin top for section titles */
+    min-height: calc(100vh - 10rem); /* Subtracting the margin top for section titles */
 }
 
 .page-header img {
-    min-width: 10rem;
-    width: 20%;
+    width: 15rem;
     margin: 5rem 0;
 }
 
