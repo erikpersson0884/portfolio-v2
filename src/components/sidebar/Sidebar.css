@@ -2,8 +2,6 @@
 .sidebar {
     background-color: rgba(168, 168, 168, 0.943);
 
-    position: fixed;
-
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -12,6 +10,7 @@
     
     box-sizing: border-box;
     height: 100vh;
+    min-width: fit-content;
     width: var(--sidebar-width);
     padding: 1rem;
 }
@@ -37,18 +36,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
-
-    width: calc(100% - 2rem);
+    gap: 1rem;
 }
 
 @media screen and (max-width: 768px) {
     .sidebar {
         flex-direction: row;
         gap: 1rem;
-
-        position: sticky;
-        top: 0;
 
         height: auto;
         width: 100%;
@@ -63,7 +57,7 @@
     }
 
     .sidebar .socials {
-        gap: .5rem;
+        gap: 1.5rem;
 
         margin-left: auto;
     }

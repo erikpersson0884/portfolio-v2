@@ -1,5 +1,10 @@
 #root {
     background-color: rgb(251, 251, 251);
+
+    display: flex;
+    flex-direction: row;
+
+    height: 100vh;
 }
 
 article {
@@ -10,9 +15,10 @@ article {
     text-align: center;
 
     box-sizing: border-box;
-    width: 85%;
     padding-inline: 2rem;
-    margin-left: 15%;
+    
+    overflow-y: auto;
+    flex: 1;
 }
 
 section {
@@ -76,9 +82,9 @@ section ul {
 }
 
 
-@media (max-width: 768px) {
-    :root {
-        --sidebar-width: 0;
+@media screen and (max-width: 768px) {
+    #root {
+        flex-direction: column;
     }
 
     article {
@@ -88,13 +94,7 @@ section ul {
     }
 
     section h1 {
-        margin: 5rem auto 2rem auto;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    section h1 {
-        margin-left: 1rem;
+        margin: 5rem auto 1rem auto;
     }
 
     section h2 {
