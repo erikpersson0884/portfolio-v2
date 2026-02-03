@@ -1,18 +1,22 @@
 .page-header {
+    text-align: left;
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 
     min-height: calc(100vh - 10rem); /* Subtracting the margin top for section titles */
+    width: 80%;
 }
 
 .page-header img {
     width: 15rem;
     margin: 5rem 0;
+    border-radius: 50%;
 }
 
-@media screen and (max-width: 600px) {
-    .page-header h2 {
-        font-size: 1.5rem;
-    }
+.page-header h2 {
+    font-size: 1.5rem;
 }
