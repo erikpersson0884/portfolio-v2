@@ -19,10 +19,8 @@ function App() {
 
             <article>
                 <Header />
+
                 
-                <Professions />
-                <Education />
-                <StudentOrganizations />
                 <Projects />
                 <Skills />
 

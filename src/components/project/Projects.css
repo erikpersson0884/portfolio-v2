@@ -1,0 +1,38 @@
+
+.project-blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.projects-inner-blocks>div {
+    flex: 1;
+}
+
+.projects-inner-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+
+.project {
+    background-color: rgb(148, 148, 115);
+
+    display: flex;
+    flex-direction: column;
+    
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.project img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.screenit {
+    /* height: 20rem; */
+}

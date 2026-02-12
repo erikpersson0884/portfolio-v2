@@ -1,5 +1,6 @@
 .page-header {
     text-align: left;
+    font-family: Jaro, sans-serif;
 
     display: flex;
     flex-direction: row;
@@ -7,7 +8,7 @@
     justify-content: space-between;
     gap: 2rem;
 
-    min-height: calc(100vh - 10rem); /* Subtracting the margin top for section titles */
+    min-height: calc(100vh );
     width: 80%;
 }
 
@@ -17,6 +18,9 @@
     border-radius: 50%;
 }
 
+.page-header h1 {
+    font-size: 120px;
+}
 .page-header h2 {
-    font-size: 1.5rem;
+    font-size: 60px;
 }

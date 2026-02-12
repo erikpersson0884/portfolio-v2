@@ -13,6 +13,8 @@
     min-width: fit-content;
     width: var(--sidebar-width);
     padding: 1rem;
+
+    display: none;
 }
 
 .sidebar .logo {

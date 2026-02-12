@@ -1,40 +1,43 @@
-import type { FC } from 'react';
-import ContentBlock from '../contentBlock/ContentBlock';
-import projects from '../../data/projects.json';
+import React from 'react';
+import './Projects.css';
 
-interface ProjectProps {
-    name: string;
-    type: string;
-    languages: string[];
-    description: string[];
-    link?: string;
-}
+import { Link } from "react-router-dom";
+import screenitImage from '../../assets/screenit.png';
+import strecklistaImage from '../../assets/strecklista.png';
 
-const Project: FC<ProjectProps> = ({ name, type, languages, description }) => {
-    return (
-        <ContentBlock 
-            header={`${name} - ${type}`}
-            subheader={languages.join(' | ')}
-            content={description}
-        />
-    );
-}
 
-const Projects = () => {
+const Projects: React.FC = () => {
     return (
         <section>
-            <h1 id={"projects"}>Projects</h1>
+            <h1>Projects</h1>
+            <hr />
+            
+            <div className='project-blocks'>
+                <div className='project screenit'>
+                    <img src={strecklistaImage} alt="Screenit logo" />
+                    <div>
+                        <h3>Strecklista</h3>
+                    </div>
+                </div>
 
-            {projects.map((project, index) => (
-                <Project 
-                    key={index}
-                    name={project.name}
-                    type={project.type}
-                    languages={project.languages}
-                    description={project.description}
-                    link={project.link}
-                />
-            ))}
+                <div className='projects-inner-blocks'>
+                    <div className='project'>
+                        <img src={screenitImage} alt="Screenit logo" />
+                        <div>
+                            <h3>screenIT</h3>
+                            <h3>2023</h3>
+                        </div>
+                        
+                    </div>
+                    <div className='project'>
+                        <img src={screenitImage} alt="Screenit logo" />
+                        <div>
+                            <h3>vevIT</h3>
+                            <h3>2024</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     )
 }
