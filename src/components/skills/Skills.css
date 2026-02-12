@@ -1,0 +1,19 @@
+
+#skills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem
+}
+
+.skill {
+    background-color: var( --primary-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    aspect-ratio: 1/1;
+    width: 100px;
+    border-radius: 2rem;
+}

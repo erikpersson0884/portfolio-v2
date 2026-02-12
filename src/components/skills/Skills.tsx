@@ -1,32 +1,29 @@
 import type { FC } from 'react'
-import ContentBlock from '../contentBlock/ContentBlock'
-import skills from '../../data/skills.json'
+import './Skills.css'
 
 interface SkillProps {
-    category: string
-    items: string[]
+    name: string
 }
 
-const Skill: FC<SkillProps> = ({ category, items }) => {
+const Skill: FC<SkillProps> = ({ name }) => {
     return (
-        <ContentBlock 
-            header={category}
-            subheader={items.join(' | ')}
-        />
+        <div className='skill'>
+            {name}
+        </div>
     );
 };
 
 const Skills: FC = () => {
+    const skills = ["Python", "JavaScript", "React", "Node.js", "Git", "Docker"]
+
     return (
         <section id="skills">
             <h1>Skills & Technologies</h1>
-            {skills.map((skill) => (
-                <Skill 
-                    key={skill.category}
-                    category={skill.category}
-                    items={skill.items}
-                />
-            ))}
+            <ul>
+                {skills.map((skill) => (
+                    <Skill name={skill}/>
+                ))}
+            </ul>
         </section>
     )
 }

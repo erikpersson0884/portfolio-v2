@@ -5,6 +5,13 @@
 /* Jaro */
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
 
+:root {
+    --background-color: #EAE0D5;
+    --primary-color: #C6AC8F;
+    --secondary-color: #5E503F;
+}
+
+
 body {
     background-color: rgb(25, 171, 69);
     background-image: url("assets/snow-mountains.jpg");
