@@ -5,10 +5,8 @@ import Footer from './layout/footer/Footer'
 
 import Sidebar from './components/sidebar/Sidebar'
 
-import Professions from './components/professions/Professions'
-import Education from './components/education/Education'
-import StudentOrganizations from './components/studentOrganization/StudentOrganizations'
 import Projects from './components/project/Projects'
+import Activities from './components/extraCurricularActivities/extraCurricularActivities'
 import Skills from './components/skills/Skills'
 
 
@@ -22,6 +20,7 @@ function App() {
 
                 
                 <Projects />
+                <Activities />
                 <Skills />
 
                 <Footer />
