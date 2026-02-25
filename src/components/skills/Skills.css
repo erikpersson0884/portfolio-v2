@@ -1,19 +1,59 @@
-
+/* Container layout */
 #skills ul {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem
+    gap: 0rem;
+    padding: 0;
+    list-style: none;
 }
 
+/* Flip card */
 .skill {
-    background-color: var( --primary-color);
+    background-color: var(--primary-color);
+    width: 110px;
+    aspect-ratio: 1/1;
+    perspective: 800px;
+}
 
+/* Inner 3D container */
+.skill-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+.skill:hover .skill-inner {
+    transform: rotateY(180deg);
+}
+
+/* FRONT & BACK shared */
+.skill-front,
+.skill-back {
+    position: absolute;
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    backface-visibility: hidden;
+}
 
-    aspect-ratio: 1/1;
-    width: 100px;
-    border-radius: 2rem;
+/* FRONT - logo */
+.skill-front img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+/* BACK - name */
+.skill-back {
+    background-color: var(--primary-color);
+    transform: rotateY(180deg);
+}
+
+#skills .second-row {
+    margin-left: 52px;
+    transform: translateY(-30%);
 }
