@@ -13,12 +13,12 @@ const Projects: React.FC = () => {
             <hr />
             
             <div className='project-blocks'>
-                <div className='project screenit'>
-                    <img src={strecklistaImage} alt="Screenit logo" />
+                <Link to="strecklista" className='project screenit'>
+                    <img src={strecklistaImage} alt="Image of phono with strekclista" />
                     <div>
                         <h3>Strecklista</h3>
                     </div>
-                </div>
+                </Link>
 
                 <div className='projects-inner-blocks'>
                     <div className='project'>

@@ -1,0 +1,65 @@
+
+.strecklista-page {
+    text-align: left;
+    text-wrap: 50ch;
+
+    display: flex;
+    align-items: flex-start;
+    
+    gap: 2rem;
+
+    margin: 2rem;
+}
+
+.strecklista-page header  {
+    display: flex;
+    align-self: center;
+    gap: 5rem;
+    padding-right: 5rem;
+}
+
+.strecklista-page header img {
+    transform: rotate(5deg);
+    max-height: 500px;
+}
+
+.strecklista-page header ul {
+    list-style: none;
+    padding: 0;
+}
+
+.strecklista-page .info-box {
+    display: flex;
+    gap: 2rem;
+}
+
+.strecklista-page .languages {
+    display: flex;
+    gap: 1rem;
+}
+
+.strecklista-page .languages>* {
+    background-color: brown;
+}
+
+
+
+.strecklista-page>*  {
+    background-color: var(--primary-color);
+
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.strecklista-page section {
+    width: 50%;
+    max-width: 500px;
+}
+
+.strecklista-page section:nth-child(even) {
+    align-self: flex-end;
+    margin-right: 10%;
+}
+.strecklista-page section:nth-child(odd) {
+    margin-left: 10%;
+}
