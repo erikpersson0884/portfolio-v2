@@ -1,51 +1,92 @@
-#activities ul{
+/* Layout */
+#activities ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10rem;
+    padding: 0;
 }
 
+/* Card container (perspective wrapper) */
 .activity {
-    background-color: bisque;
-    
-    background-size: cover;
-    background-position: center;
-
+    list-style: none;
     width: 400px;
     height: 200px;
-    border-radius: 3px;
+    perspective: 1000px;
+}
 
+/* 3D inner container */
+.activity-inner {
     position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform .7s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+/* Flip effect */
+.activity:hover .activity-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front & Back shared styles */
+.activity-front,
+.activity-back {
+    position: absolute;
+    inset: 0;
+    border-radius: 3px;
+    backface-visibility: hidden;
     box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
 }
 
-.activity p {
+/* FRONT */
+.activity-front {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.activity-front p {
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
-
     margin: 0;
-    
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
 }
 
+/* BACK */
+.activity-back {
+    background: #fff;
+    color: var(--text-color-1);
+    padding: 1.5rem;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.activity-back p {
+    font-size: 15px;
+}
+
+/* Tilted postcard effect */
 #activities .prit {
-    rotate: 3deg;
+    transform: rotate(3deg);
 }
 
 #activities .equalit {
-    rotate: -2deg;
+    transform: rotate(-2deg);
 }
 
 #activities .fikit {
-    rotate: -2deg;
+    transform: rotate(-2deg);
 }
 
 #activities .smurf {
     width: 200px;
     height: 300px;
-    rotate: 2deg;
+    transform: rotate(2deg);
 }
