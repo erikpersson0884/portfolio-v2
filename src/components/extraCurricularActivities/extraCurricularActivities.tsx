@@ -30,6 +30,7 @@ const Activities: FC = () => {
     return (
         <section id="activities">
             <h1>Extra-curricular Activities</h1>
+            <hr />
             <ul>
                 <Activity name="P.R.I.T." backgroundPicture={pritImg} className='prit'/>
                 <Activity name="Equalit" backgroundPicture={equalitImg} className='equalit'/>

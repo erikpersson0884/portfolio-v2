@@ -19,6 +19,12 @@ article {
 
 section {
     width: 80%;
+    margin-bottom: 200px;
+}
+
+#root hr {
+    width: 55%;
+    margin-bottom: 80px;
 }
 
 
