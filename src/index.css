@@ -11,12 +11,16 @@
     --background-color: #EAE0D5;
     --primary-color: #C6AC8F;
     --secondary-color: #5E503F;
+
+    --text-color-1: #080A08;
+    --text-color-2: #22333b;
+    --text-color-3: #ffffff;
 }
 
 
 body {
-    background-color: rgb(25, 171, 69);
-    background-image: url("assets/snow-mountains.jpg");
+    background-color: var(--background-color);
+    /* background-image: url("assets/snow-mountains.jpg"); */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;    
