@@ -1,5 +1,7 @@
 
 .strecklista-page {
+    background: url("../../assets/snow-mountains.jpg") center center / cover no-repeat fixed;
+
     text-align: left;
     text-wrap: 50ch;
 
@@ -8,7 +10,8 @@
     
     gap: 2rem;
 
-    margin: 2rem;
+    padding-inline: 11%;
+    margin-bottom: 3rem;
 }
 
 .strecklista-page header  {
@@ -16,11 +19,32 @@
     align-self: center;
     gap: 5rem;
     padding-right: 5rem;
+
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 4rem;
 }
 
 .strecklista-page header img {
     transform: rotate(5deg);
-    max-height: 500px;
+    max-height: 400px;
+}
+
+.strecklista-page header p {
+    max-width: 850px;
+}
+
+.strecklista-page header h1 {
+    font-family: Inter;
+    font-size: 75px;
+    font-weight: 500;
+}
+
+.strecklista-page header h2 {
+    font-size: 40px;
+    font-style: italic;
+    font-family: Inter;
+    font-weight: 200;
 }
 
 .strecklista-page header ul {
@@ -30,20 +54,41 @@
 
 .strecklista-page .info-box {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+}
+
+.strecklista-page .info-box>*:first-child {
+    width: 100px;
+}
+
+.strecklista-page .info-box ul p {
+    margin-top: 0;
 }
 
 .strecklista-page .languages {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .strecklista-page .languages>* {
-    background-color: brown;
+    background-color: var(--secondary-color);
+    color: var(--text-color-3);
+
+    width: 160px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.strecklista-page .languages p {
+    text-align: center;
+    font-family: JejuHallasan, serif;
+
+    margin: 13px;
 }
 
 
-
+/* ==== Everything under header ==== */
 .strecklista-page>*  {
     background-color: var(--primary-color);
 
@@ -52,14 +97,30 @@
 }
 
 .strecklista-page section {
-    width: 50%;
-    max-width: 500px;
+    max-width: 700px;
 }
 
-.strecklista-page section:nth-child(even) {
-    align-self: flex-end;
-    margin-right: 10%;
-}
 .strecklista-page section:nth-child(odd) {
-    margin-left: 10%;
+    align-self: flex-end;
+}
+
+/* ==== Responsive ==== */
+
+@media screen and (max-width: 550px) {
+    .strecklista-page {
+        margin: 0rem;
+    }
+    .strecklista-page header {
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+
+    .strecklista-page header img {
+        display: none;
+
+    }
+    
 }
