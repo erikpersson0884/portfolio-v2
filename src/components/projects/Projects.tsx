@@ -4,7 +4,7 @@ import './Projects.css';
 import { Link } from "react-router-dom";
 import screenitImage from '../../assets/screenit.png';
 import strecklistaImage from '../../assets/strecklista.png';
-
+import vevITImage from '../../assets/vevit.png';
 
 const Projects: React.FC = () => {
     return (
@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
             <hr />
             
             <div className='project-blocks'>
-                <Link to="strecklista" className='project screenit'>
+                <Link to="strecklista" className='project strecklista'>
                     <img src={strecklistaImage} alt="Image of phono with strekclista" />
                     <div>
                         <h3>Strecklista</h3>
@@ -30,11 +30,11 @@ const Projects: React.FC = () => {
                         
                     </div>
                     <div className='project'>
-                        <img src={screenitImage} alt="Screenit logo" />
                         <div>
                             <h3>vevIT</h3>
                             <h3>2024</h3>
                         </div>
+                        <img src={vevITImage} alt="Screenit logo" />
                     </div>
                 </div>
             </div>

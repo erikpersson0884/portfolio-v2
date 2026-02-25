@@ -9,7 +9,7 @@ import Sidebar from './components/sidebar/Sidebar'
 import ContactCard from './components/contactCard/ContactCard'
 
 import Expertise from './components/expertise/Expertise'
-import Projects from './components/project/Projects'
+import Projects from './components/projects/Projects'
 import Activities from './components/extraCurricularActivities/extraCurricularActivities'
 import Skills from './components/skills/Skills'
 

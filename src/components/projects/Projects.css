@@ -1,0 +1,74 @@
+
+.project-blocks, .projects-inner-blocks  {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.projects-inner-blocks {
+    flex-direction: column;
+    flex: 3;
+}
+
+
+/* ==== General project styling ==== */
+
+.project {
+    background-color: var(--primary-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    padding: 2rem;
+    border-radius: 20px;
+
+    position: relative;
+}
+
+.project h3 {
+    color: var(--text-color-1);
+    text-decoration: none;
+    font-size: 40px;
+    font-family: Inter;
+}
+
+.project img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+
+/* ==== Specific projects ==== */
+
+.strecklista {
+    padding-bottom: 30px;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+
+}
+
+.strecklista img {
+    margin-top: 20px;
+    height: 330px;
+    width: auto;
+    transform: rotate(10deg);
+    transition: transform 0.4s ease;
+}
+
+.strecklista:hover img {
+    transform: rotate(-10deg);
+}
+
+.strecklista div {
+    position: absolute; 
+    bottom: 30px;
+    right: 60px;
+}
+
+.projects-inner-blocks .project { /* vevIT and screenit */
+    padding-inline: 100px;
+}
