@@ -6,7 +6,10 @@ import gmail from '../../assets/icons/gmail.svg'
 import github from '../../assets/icons/github.svg'
 import linkedin from '../../assets/icons/linkedin.svg'
 
-const Sidebar: FC = () => {
+interface SidebarProps {
+    showContactCard: () => void;
+}
+const Sidebar: FC<SidebarProps> = ({showContactCard}) => {
 
     const socials: { name: string, url: string, image: string }[] = [
         { name: 'Gmail', url: 'mailto:erikpersson0884@gmail.com', image: gmail },
@@ -20,7 +23,7 @@ const Sidebar: FC = () => {
                 <img src={logo} className="logo" alt="site logo" />
             </a>
             
-            <p className='link-underline'>Contact</p>
+            <p onClick={showContactCard} className='link-underline'>Contact</p>
 
             <ul className='socials no-list-style'>
                 {socials.map((social) => (
