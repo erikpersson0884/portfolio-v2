@@ -1,44 +1,38 @@
 
 .sidebar {
-    background-color: rgba(168, 168, 168, 0.943);
+    background-color: var(--primary-color);
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
     
     box-sizing: border-box;
     height: 100vh;
-    min-width: fit-content;
     width: var(--sidebar-width);
-    padding: 1rem;
+    padding: .5rem;
 
-    display: none;
+    position: fixed;
 }
 
 .sidebar .logo {
-    width: 8rem;
+    width: 100%;
 }
 
-.sidebar .table-of-contents a {
-    font-size: 1.3rem;
-    font-family: 'Inknut Antiqua';
-
-    /* display: inline-block;
-    transition: transform 0.2s linear; */
-}
-
-.sidebar .table-of-contents a:hover {
-    transform: scale(1.06);
+.sidebar p {
+    font-family: Jaro;
+    font-size: 26px;
+    margin: 0;
 }
 
 .sidebar .socials {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    margin-top: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -59,6 +53,7 @@
     }
 
     .sidebar .socials {
+        flex-direction: row;
         gap: 1.5rem;
 
         margin-left: auto;
