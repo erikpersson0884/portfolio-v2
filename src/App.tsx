@@ -8,6 +8,7 @@ import Footer from './layout/footer/Footer'
 import Sidebar from './components/sidebar/Sidebar'
 import ContactCard from './components/contactCard/ContactCard'
 
+import Expertise from './components/expertise/Expertise'
 import Projects from './components/project/Projects'
 import Activities from './components/extraCurricularActivities/extraCurricularActivities'
 import Skills from './components/skills/Skills'
@@ -26,8 +27,8 @@ function App() {
                 <Route path="/" element={
                     <article>
                         <Header />
-
-                        <Projects />
+                        <Expertise />
+                        <Projects />    
                         <Activities />
                         <Skills />
                         <Footer />
