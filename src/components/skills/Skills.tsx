@@ -27,6 +27,7 @@ const Skill: FC<SkillProps> = ({ name, logo }) => {
 };
 
 const Skills: FC = () => {
+    {/* https://devicon.dev/ */ }
     const skills = [
         { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
         { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },

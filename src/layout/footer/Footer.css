@@ -3,6 +3,9 @@
 
     box-sizing: border-box;
     width: 100%;
-    padding: 1rem;
-    margin-top: 5rem;
+    margin: 2rem
+}
+
+.page-footer p {
+    margin: 0;
 }
