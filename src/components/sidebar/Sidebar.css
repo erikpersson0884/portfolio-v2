@@ -16,7 +16,7 @@
     position: fixed;
 }
 
-.sidebar .logo {
+.sidebar .site-logo {
     width: 100%;
 }
 
@@ -31,7 +31,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
+
     margin-top: auto;
 }
 
@@ -44,12 +45,8 @@
         width: 100%;
     }
 
-    .sidebar .logo {
+    .sidebar .site-logo {
         width: 6rem;
-    }
-
-    .sidebar .table-of-contents {
-        display: none;
     }
 
     .sidebar .socials {

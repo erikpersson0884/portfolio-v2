@@ -55,7 +55,7 @@ section {
 
     width: 0;
     height: 2px;
-    background-color: #379255;
+    background-color: var(--link-color);
 
     transition: width 0.3s ease;
 }
