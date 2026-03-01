@@ -19,8 +19,6 @@ const Sidebar: FC<SidebarProps> = ({showContactCard}) => {
             
             <p onClick={showContactCard} className='link-underline'>Contact</p>
 
-            {GitHubLogo}
-
             <ul className='socials no-list-style'>
                 <li>{GmailLogo}</li>
                 <li>{LinkedInLogo}</li>
