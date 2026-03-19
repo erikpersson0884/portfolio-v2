@@ -2,16 +2,10 @@ import './App.css'
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import Header from './layout/header/Header'
-import Footer from './layout/footer/Footer'
-
 import Sidebar from './components/sidebar/Sidebar'
 import ContactCard from './components/contactCard/ContactCard'
+import MainPage from './pages/mainPage/MainPage'
 
-import Expertise from './components/expertise/Expertise'
-import Projects from './components/projects/Projects'
-import Activities from './components/extraCurricularActivities/extraCurricularActivities'
-import Skills from './components/skills/Skills'
 
 import Strecklista from './pages/strecklista/Strecklista'
 
@@ -24,17 +18,7 @@ function App() {
             <ContactCard show={showContactCard} setShow={setShowContactCard}/>
 
             <Routes>
-                <Route path="/" element={
-                    <article>
-                        <Header />
-                        <Expertise />
-                        <Projects />    
-                        <Activities />
-                        <Skills />
-                        <Footer />
-
-                    </article>
-                }></Route>
+                <Route path="/" element={<MainPage />}></Route>
 
                 <Route path="/strecklista" element={<Strecklista />}></Route>
             </Routes>

@@ -17,16 +17,6 @@ article {
     margin-left: var(--sidebar-width);
 }
 
-section {
-    width: 80%;
-    margin-bottom: 200px;
-}
-
-#root hr {
-    width: 55%;
-    margin-bottom: 80px;
-}
-
 
 /* Generic classes */
 
