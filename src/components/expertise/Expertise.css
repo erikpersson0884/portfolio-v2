@@ -16,6 +16,8 @@
     padding: 15px;
     border-radius: 10px;
     transition: transform  0.3s ease-out;
+
+    flex:1
 }
 
 .expertise-block:hover {
