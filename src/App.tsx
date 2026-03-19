@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ScrollToTop from '@/components/scrollToTop/ScrollToTop'
 
 import MainPage from '@/pages/mainPage/MainPage'
 import Footer from '@/layout/footer/Footer';
@@ -19,6 +20,7 @@ function App() {
             <ContactCard show={showContactCard} setShow={setShowContactCard}/>
 
             <div id="app">
+                <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<MainPage />}></Route>
                     <Route path="/strecklista" element={<Strecklista />}></Route>
