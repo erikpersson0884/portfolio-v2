@@ -1,21 +1,5 @@
-
-
-
-
-/* ==== Individual parts ==== */
-
-.strecklista-page .mockup {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    border: none;
-    outline: none;
-}
-
 .strecklista-page iframe {
     width: min-content;
     float: right;
     border-radius: 1rem;
 }
-
-

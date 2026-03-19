@@ -90,7 +90,7 @@ export const Strecklista: React.FC = () => {
                 </ul>
             </section>
 
-            <section className='mockup'>
+            <section className='with-image'>
                 <div>
                     <h2>Figma Mockup</h2>
                     {/* <p>

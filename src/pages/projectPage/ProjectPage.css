@@ -10,6 +10,7 @@
 
     box-sizing: border-box;
     width: 100%;
+    min-height: 100vh;
     padding-inline: 11%;
     padding-bottom: 3rem;
 }
@@ -125,6 +126,14 @@
     align-self: left;
     height: 2px;
     margin: 0
+}
+
+.project-page .with-image {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border: none;
+    outline: none;
 }
 
 /* ==== Responsive ==== */
