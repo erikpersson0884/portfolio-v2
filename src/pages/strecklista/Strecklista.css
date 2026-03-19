@@ -11,7 +11,7 @@
     gap: 2rem;
 
     padding-inline: 11%;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .strecklista-page header  {
@@ -54,7 +54,7 @@
 
 .strecklista-page .info-box {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .strecklista-page .info-box>*:first-child {
@@ -71,17 +71,20 @@
     gap: 1rem;
 }
 
-.strecklista-page .languages>* {
+.strecklista-page .language {
     background-color: var(--secondary-color);
     color: var(--text-color-3);
 
-    width: 160px;
-    height: 60px;
-    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 130px;
+    height: 45px;
+    border-radius: 17px;
 }
 
-.strecklista-page .languages p {
-    text-align: center;
+.strecklista-page .language p {
     font-family: JejuHallasan, serif;
 
     margin: 13px;
@@ -97,12 +100,34 @@
 }
 
 .strecklista-page section {
-    max-width: 700px;
+    max-width: 850px;
 }
 
 .strecklista-page section:nth-child(odd) {
     align-self: flex-end;
 }
+
+/* ==== Individual parts ==== */
+
+.strecklista-page .mockup {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border: none;
+    outline: none;
+}
+
+.strecklista-page iframe {
+    width: min-content;
+    float: right;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
 
 /* ==== Responsive ==== */
 

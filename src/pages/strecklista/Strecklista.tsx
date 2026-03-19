@@ -1,6 +1,7 @@
 import React from 'react';
 import './Strecklista.css';
 import strecklistaImage from '@/assets/strecklista.png';
+import strecklistaRedesignImage from '@/assets/strecklista-redesign.png';
 
 export const Strecklista: React.FC = () => {
     return (
@@ -9,7 +10,7 @@ export const Strecklista: React.FC = () => {
                 <div>
                     <h1>Strecklista</h1>
                     <h2>Shared Storage Checkout System</h2>
-                    <p>This project was one of the most fun i have created. Together my good friend Charlotte Lindell i created a shared storage checkout system for use bny the student at the IT division.</p>
+                    <p>This project was one of the most fun i have created. Together with my good friend Charlotte Lindell, I created a shared storage checkout system for use by the students at the IT division.</p>
 
                     <div className='info-box'>
                         <p>Team:</p> 
@@ -25,9 +26,9 @@ export const Strecklista: React.FC = () => {
                     
 
                     <ul className='languages'>
-                        <li><p>React</p></li>
-                        <li><p>Vite</p></li>
-                        <li><p>CSS</p></li>
+                        <li className='language'><p>React</p></li>
+                        <li className='language'><p>Vite</p></li>
+                        <li className='language'><p>CSS</p></li>
                     </ul>
                 </div>
 
@@ -38,6 +39,8 @@ export const Strecklista: React.FC = () => {
                 <h2>Background</h2>
 
                 <p>Many commitees at Chalmers have snacks, drinks and simpler meels in their storage spaces, however payment is often done via swish or write up which is tedious and hard to keep track of. It is also hard to keep track of prices for commites that rotate their inventory often. </p>
+
+                <p>Summary:</p>
                 <ul>
                     <li>Many commitees have snacks, drinks, etc. in their storage spaces</li>
                     <li>Time-consuming to pay each time </li>
@@ -69,24 +72,37 @@ export const Strecklista: React.FC = () => {
                 </ul>
             </section>
 
-            <section>
-                <h2>Figma Mockup</h2>
-                <p>
-                    Based on the insights from the pre-study, a first prototype was created in Figma. 
-                    The focus was on reducing checkout time and creating a clear, intuitive interface. 
-                    The layout prioritized fast item selection, visible pricing, and minimal steps 
-                    to complete a purchase.
-                </p>
-                <ul>
-                    <li>Low-fidelity prototype to test structure and flow</li>
-                    <li>Clear product overview with fast selection</li>
-                    <li>Visual distinction between pricing tiers</li>
-                    <li>Test session conducted with one committee</li>
-                    <li>Feedback used to refine navigation and layout</li>
-                </ul>
+            <section className='mockup'>
+                <div>
+                    <h2>Figma Mockup</h2>
+                    <p>
+                        Based on the insights from the pre-study, a first prototype was created in Figma. 
+                        The focus was on reducing checkout time and creating a clear, intuitive interface. 
+                        The layout prioritized fast item selection, visible pricing, and minimal steps 
+                        to complete a purchase.
+                    </p>
+
+                    <p>You can try it out for yourself to the rigth!</p>
+                    <ul>
+                        <li>Low-fidelity prototype to test structure and flow</li>
+                        <li>Clear product overview with fast selection</li>
+                        <li>Visual distinction between pricing tiers</li>
+                        <li>Test session conducted with one committee</li>
+                        <li>Feedback used to refine navigation and layout</li>
+                    </ul>
+                </div>
+
+                <iframe
+                    style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                    width="800"
+                    height="450"
+                    src="https://embed.figma.com/proto/M6GjmsmabYRZ545rig7LFp/Str%C3%A4cklista-innan-rewrite?page-id=0%3A1&node-id=1-2&p=f&viewport=602%2C504%2C0.36&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share"
+                    allowFullScreen
+                ></iframe>
             </section>
             
-            <section>
+            <section className='mockup'>
+                <div>
                 <h2>Re-design</h2>
                 <p>
                     Based on feedback from the Figma mockup and user testing, the interface was refined to improve usability, consistency, and visual clarity. 
@@ -98,6 +114,8 @@ export const Strecklista: React.FC = () => {
                     <li>Enhanced navigation and clear feedback for user actions</li>
                     <li>Adaptable design to accommodate different pricing tiers and inventory changes</li>
                 </ul>
+                </div>
+                <img src={strecklistaRedesignImage} width={400} alt='Strecklista redesign' />
             </section>
         </article>
     );
