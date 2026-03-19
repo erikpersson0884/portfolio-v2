@@ -2,9 +2,9 @@ import React from 'react';
 import './Projects.css';
 
 // import { Link } from "react-router-dom";
-import screenitImage from '../../assets/screenit.png';
-import strecklistaImage from '../../assets/strecklista.png';
-import vevITImage from '../../assets/vevit.png';
+import screenitImage from '@/assets/screenit.png';
+import strecklistaImage from '@/assets/strecklista.png';
+import vevITImage from '@/assets/vevit.png';
 
 const Projects: React.FC = () => {
     return (

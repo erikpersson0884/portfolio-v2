@@ -1,6 +1,6 @@
 import React from 'react';
 import './Strecklista.css';
-import strecklistaImage from '../../assets/strecklista.png';
+import strecklistaImage from '@/assets/strecklista.png';
 
 export const Strecklista: React.FC = () => {
     return (

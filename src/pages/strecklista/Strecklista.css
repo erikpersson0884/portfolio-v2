@@ -1,6 +1,6 @@
 
 .strecklista-page {
-    background: url("../../assets/snow-mountains.jpg") center center / cover no-repeat fixed;
+    background: url("@/assets/snow-mountains.jpg") center center / cover no-repeat fixed;
 
     text-align: left;
     text-wrap: 50ch;

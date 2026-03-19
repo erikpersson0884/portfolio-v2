@@ -1,5 +1,5 @@
 import './Header.css'
-import erik from '../../assets/erik.jpg'
+import erik from '@/assets/erik.jpg'
 
 const Header = () => {
     return (

@@ -1,8 +1,8 @@
 import type { FC } from 'react'
-import logo from '../../assets/logo.png'
+import logo from '@/assets/logo.png'
 import './Sidebar.css'
 
-import { GitHubLogo, LinkedInLogo, GmailLogo } from '../socialLogo/SocialLogos'
+import { GitHubLogo, LinkedInLogo, GmailLogo } from '@/components/socialLogo/SocialLogos'
 
 interface SidebarProps {
     showContactCard: () => void;

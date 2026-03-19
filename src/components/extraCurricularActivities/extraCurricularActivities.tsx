@@ -1,9 +1,9 @@
 import type { FC } from 'react'
 import './extraCurricularActivities.css'
-import pritImg from '../../assets/activities/prit.jpg';
-import equalitImg from '../../assets/activities/equalit.jpg';
-import fikitImg from '../../assets/activities/fikit.jpg';
-import smurfImg from '../../assets/activities/smurf.jpg';
+import pritImg from '@/assets/activities/prit.jpg';
+import equalitImg from '@/assets/activities/equalit.jpg';
+import fikitImg from '@/assets/activities/fikit.jpg';
+import smurfImg from '@/assets/activities/smurf.jpg';
 
 
 interface ActivityProps {
