@@ -2,12 +2,13 @@ import './App.css'
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import Sidebar from './components/sidebar/Sidebar'
-import ContactCard from './components/contactCard/ContactCard'
-import MainPage from './pages/mainPage/MainPage'
+import MainPage from '@/pages/mainPage/MainPage'
+import Footer from '@/layout/footer/Footer';
 
+import Sidebar from '@/components/sidebar/Sidebar'
+import ContactCard from '@/components/contactCard/ContactCard'
 
-import Strecklista from './pages/strecklista/Strecklista'
+import Strecklista from '@/pages/strecklista/Strecklista'
 
 function App() {
     const [showContactCard, setShowContactCard] = React.useState(false);
@@ -17,12 +18,14 @@ function App() {
             <Sidebar showContactCard={() =>setShowContactCard(true)}/>
             <ContactCard show={showContactCard} setShow={setShowContactCard}/>
 
-            <Routes>
-                <Route path="/" element={<MainPage />}></Route>
+            <div id="app">
+                <Routes>
+                    <Route path="/" element={<MainPage />}></Route>
+                    <Route path="/strecklista" element={<Strecklista />}></Route>
+                </Routes>
 
-                <Route path="/strecklista" element={<Strecklista />}></Route>
-            </Routes>
-
+                <Footer />
+            </div>
         </BrowserRouter>
     )
 }
