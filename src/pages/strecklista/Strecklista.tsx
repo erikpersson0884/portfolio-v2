@@ -2,10 +2,11 @@ import React from 'react';
 import './Strecklista.css';
 import strecklistaImage from '@/assets/strecklista.png';
 import strecklistaRedesignImage from '@/assets/strecklista-redesign.png';
+import ProjectPage from '../projectPage/ProjectPage';
 
 export const Strecklista: React.FC = () => {
     return (
-        <article className='strecklista-page'>
+        <ProjectPage className='strecklista-page'>
             <header>
                 <div>
                     <h1>Strecklista</h1>
@@ -153,7 +154,7 @@ export const Strecklista: React.FC = () => {
                 <p>This project strengthened my ability to design for real-world constraints and balance usability with flexibility in dynamic environments.
                 It also highlighted the importance of user research and iterative design in creating effective solutions that meet user needs.</p>
             </section>
-        </article>
+        </ProjectPage>
     );
 };
 

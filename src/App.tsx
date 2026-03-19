@@ -10,6 +10,7 @@ import Sidebar from '@/components/sidebar/Sidebar'
 import ContactCard from '@/components/contactCard/ContactCard'
 
 import Strecklista from '@/pages/strecklista/Strecklista'
+import Screenit from './pages/screenit/Screenit';
 
 function App() {
     const [showContactCard, setShowContactCard] = React.useState(false);
@@ -24,6 +25,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<MainPage />}></Route>
                     <Route path="/strecklista" element={<Strecklista />}></Route>
+                    <Route path="/screenit" element={<Screenit />}></Route>
                 </Routes>
 
                 <Footer />
