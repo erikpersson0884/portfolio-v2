@@ -5,26 +5,23 @@
     position: relative;
 }
 
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    margin-left: var(--sidebar-width);
+}
+
 article {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     text-align: center;
-
-    box-sizing: border-box;
-    width: 100%;
-    margin-left: var(--sidebar-width);
-}
-
-section {
-    width: 80%;
-    margin-bottom: 200px;
-}
-
-#root hr {
-    width: 55%;
-    margin-bottom: 80px;
 }
 
 
@@ -55,7 +52,7 @@ section {
 
     width: 0;
     height: 2px;
-    background-color: #379255;
+    background-color: var(--link-color);
 
     transition: width 0.3s ease;
 }

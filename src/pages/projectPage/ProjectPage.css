@@ -1,0 +1,157 @@
+.project-page {
+    background: url("@/assets/snow-mountains.jpg") center/cover no-repeat fixed;
+
+    text-align: left;
+    text-wrap: 50ch;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding-inline: 11%;
+    padding-bottom: 3rem;
+}
+
+.project-page header  {
+    display: flex;
+    align-self: center;
+    gap: 5rem;
+    padding-right: 5rem;
+
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 4rem;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-page header img {
+    transform: rotate(5deg);
+    max-height: 400px;
+}
+
+.project-page header p {
+    max-width: 850px;
+}
+
+.project-page header h1 {
+    font-family: Inter;
+    font-size: 75px;
+    font-weight: 500;
+}
+
+.project-page header h2 {
+    font-size: 40px;
+    font-style: italic;
+    font-family: Inter;
+    font-weight: 200;
+}
+
+.project-page header ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-page .info-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-page .info-box>*:first-child {
+    width: 100px;
+}
+
+.project-page .info-box ul p {
+    margin-top: 0;
+}
+
+.project-page .languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-page .language {
+    background-color: var(--secondary-color);
+    color: var(--text-color-3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 130px;
+    height: 45px;
+    border-radius: 17px;
+
+    box-shadow: 0 0 10px 3px var(--secondary-color);
+
+}
+
+.project-page .language p {
+    font-family: JejuHallasan, serif;
+
+    margin: 13px;
+}
+
+
+/* ==== Everything under header ==== */
+
+.project-page>*  {
+    background-color: var(--primary-color);
+    color: #3b3b3b;
+
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.project-page section {
+    max-width: 1000px;
+    min-width: 60%;
+}
+
+.project-page section:nth-child(odd) {
+    align-self: flex-end;
+}
+
+.project-page h2 {
+    font-weight: bold;
+}
+
+.project-page hr {
+    background-color: var(--secondary-color);
+    width: 50%;
+    align-self: left;
+    height: 2px;
+    margin: 0
+}
+
+.project-page .with-image {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border: none;
+    outline: none;
+}
+
+/* ==== Responsive ==== */
+
+@media screen and (max-width: 550px) {
+    .project-page {
+        margin: 0rem;
+    }
+    .project-page header {
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+
+    .project-page header img {
+        display: none;
+
+    }
+}

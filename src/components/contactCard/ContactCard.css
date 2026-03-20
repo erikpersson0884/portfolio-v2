@@ -8,6 +8,7 @@
     background-color: rgba(0, 0, 0, 0.479);
 
     z-index: 100;
+
 }
 
 .contact-card {
@@ -19,7 +20,8 @@
     width: 450px;
     padding: 20px;
     border-radius: 10px;
-    transform: translate(-50%, -50%) rotate(3deg);
+    transform: translate(100%, 100%); /* start offscreen bottom-right */
+    animation: glideIn 0.8s forwards ease-out; /* animate to center */
 }
 
 .contact-card .underlined {
@@ -46,3 +48,11 @@
     padding: 10px;
 }
 
+/* ==== Animations === */
+
+/* Keyframes for sliding in */
+@keyframes glideIn {
+  to {
+    transform: translate(-50%, -50%) rotate(-3deg); /* final position in center */
+  }
+}

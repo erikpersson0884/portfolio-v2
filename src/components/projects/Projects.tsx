@@ -1,10 +1,10 @@
 import React from 'react';
 import './Projects.css';
 
-// import { Link } from "react-router-dom";
-import screenitImage from '../../assets/screenit.png';
-import strecklistaImage from '../../assets/strecklista.png';
-import vevITImage from '../../assets/vevit.png';
+import { Link } from "react-router-dom";
+import screenitImage from '@/assets/screenit.png';
+import strecklistaImage from '@/assets/strecklista.png';
+import vevITImage from '@/assets/vevit.png';
 
 const Projects: React.FC = () => {
     return (
@@ -13,14 +13,14 @@ const Projects: React.FC = () => {
             <hr />
             
             <div className='project-blocks'>
-                {/* <Link to="strecklista" className='project strecklista'> */}
-                <div className='project strecklista'>
+                <Link to="strecklista" className='project strecklista'>
+                {/* <div className='project strecklista'> */}
                     <img src={strecklistaImage} alt="Image of phono with strekclista" />
                     <div>
                         <h3>Strecklista</h3>
                     </div>
-                </div>
-                {/* </Link> */}
+                {/* </div> */}
+                </Link>
 
                 <div className='projects-inner-blocks'>
                     <div className='project'>

@@ -16,6 +16,8 @@
     padding: 15px;
     border-radius: 10px;
     transition: transform  0.3s ease-out;
+
+    flex:1
 }
 
 .expertise-block:hover {
@@ -33,7 +35,7 @@
 .expertise-block img {
     aspect-ratio: 1/1;
     width: 50px; 
-    z-index: 100;
+    z-index: 10;
 }
 
 .expertise-block .expertise-icon {

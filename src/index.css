@@ -18,6 +18,8 @@
     --text-color-2: #22333b;
     --text-color-3: #ffffff;
 
+    --link-color: #379255;
+
     --sidebar-width: 120px;
 }
 
@@ -54,7 +56,7 @@ h3 {
 
 p, li {
     font-family: "segoe-ui", "Noto Sans", sans-serif;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 hr {

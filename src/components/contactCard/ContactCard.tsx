@@ -1,8 +1,8 @@
 import React from 'react';
 import './ContactCard.css';
 
-import phoneIcon from '../../assets/icons/phone.svg';
-import mailIcon from '../../assets/icons/mail.svg';
+import phoneIcon from '@/assets/icons/phone.svg';
+import mailIcon from '@/assets/icons/mail.svg';
 
 interface ContactCardProps {
     show: boolean;

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Expertise.css";
-import codeIcon from "../../assets/icons/code.svg";
-import fullstackIcon from "../../assets/icons/fullstack.svg";
-import uxIcon from "../../assets/icons/ux.svg";
+import codeIcon from "@/assets/icons/code.svg";
+import fullstackIcon from "@/assets/icons/fullstack.svg";
+import uxIcon from "@/assets/icons/ux.svg";
 
 
 export const Expertise: React.FC = () => {

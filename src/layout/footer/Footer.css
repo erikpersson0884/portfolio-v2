@@ -1,9 +1,6 @@
 .page-footer {
-    text-align: center;
-
-    box-sizing: border-box;
-    width: 100%;
-    margin: 2rem
+    padding: 2rem;
+    margin-top: auto;
 }
 
 .page-footer p {

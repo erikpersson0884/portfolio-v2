@@ -50,11 +50,12 @@
     padding: 1rem;
 }
 
-.activity-front p {
-    color: #fff;
+.activity-front h3 {
+    color: var(--text-color-3);
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.779);
 }
 
 /* BACK */
@@ -68,8 +69,13 @@
     justify-content: center;
 }
 
+.activity-back h3 {
+    font-size: 22px;
+}
+
 .activity-back p {
     font-size: 15px;
+    text-align: left;
 }
 
 /* Tilted postcard effect */
