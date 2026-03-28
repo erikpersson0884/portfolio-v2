@@ -14,27 +14,24 @@ const Projects: React.FC = () => {
             
             <div className='project-blocks'>
                 <Link to="strecklista" className='project strecklista'>
-                {/* <div className='project strecklista'> */}
                     <img src={strecklistaImage} alt="Image of phono with strekclista" />
                     <div>
                         <h3>Strecklista</h3>
                     </div>
-                {/* </div> */}
                 </Link>
 
                 <div className='projects-inner-blocks'>
-                    <div className='project'>
+                    <Link to="screenit" className='project'>
                         <img src={screenitImage} alt="Screenit logo" />
                         <div>
                             <h3>screenIT</h3>
-                            <h3>2023</h3>
+                            <h4>2023</h4>
                         </div>
-                        
-                    </div>
+                    </Link>
                     <div className='project'>
                         <div>
                             <h3>vevIT</h3>
-                            <h3>2024</h3>
+                            <h4>2024</h4>
                         </div>
                         <img src={vevITImage} alt="Screenit logo" />
                     </div>

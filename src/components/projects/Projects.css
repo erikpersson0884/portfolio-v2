@@ -27,6 +27,10 @@
     position: relative;
 }
 
+.project-blocks a {
+    text-decoration: none;
+}
+
 .project h3 {
     color: var(--text-color-1);
     text-decoration: none;
@@ -34,12 +38,18 @@
     font-family: Inter;
 }
 
+.project h4 {
+    color: var(--text-color-1);
+    font-weight: 300;
+    font-size: 30px;
+    margin: 0;
+}
+
 .project img {
     width: 200px;
     height: auto;
     margin-bottom: 1rem;
 }
-
 
 /* ==== Specific projects ==== */
 
@@ -71,4 +81,10 @@
 
 .projects-inner-blocks .project { /* vevIT and screenit */
     padding-inline: 100px;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.projects-inner-blocks .project img {
+    width: 200px;
 }
