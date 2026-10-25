@@ -1,6 +1,5 @@
 > ⚠️ **Note:** This project has been discontinued, you can find my new portfolio [here](https://github.com/erikpersson0884/portfolio).
-# screenIT
-
+> 
 # Portfolio v2
 The second version of my personal portfolio
 
